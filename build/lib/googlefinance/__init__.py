@@ -116,8 +116,7 @@ def getNews(symbol):
 
 def getIntradayData(symbol,interval,period):
     url=buildUrlForIntradayData(symbol,interval,period)
-    raw_data=requests.get(url).text
-    return raw_data
+    return requests.get(url).text
 
 
 if __name__ == '__main__':
